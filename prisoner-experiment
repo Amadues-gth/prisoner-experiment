@@ -1,0 +1,6 @@
+cd prisoner_experiment
+git init
+git remote add origin https://github.com/你的用户名/prisoner-experiment.git
+git add .
+git commit -m "初始提交"
+git push -u origin master
