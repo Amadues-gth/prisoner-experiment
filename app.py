@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-import openai
+from openai import OpenAI
 import os
 
 app = Flask(__name__)
