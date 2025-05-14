@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify, render_template
 from openai import OpenAI
-import os
+import openai
 
 app = Flask(__name__)
 
 # 设置你的 OpenAI API 密钥（使用环境变量方式）
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("OPENAI_API_KEY") 
 
 @app.route("/")
 def index():
